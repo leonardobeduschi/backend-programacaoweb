@@ -1,0 +1,351 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "biblioteca_back",
+    "dateExported": "2023-05-08T17:09:00.159Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "89dc9dbf-fb7e-4065-bf4e-e7aa72ebedae",
+            "colId": "b04c319b-99f5-4217-84d0-fce7fc742ded",
+            "containerId": "",
+            "name": "SingUpPost",
+            "url": "http://localhost:3333/api/signup",
+            "method": "POST",
+            "sortNum": 5000,
+            "created": "2022-10-21T17:37:25.077Z",
+            "modified": "2022-11-04T00:01:14.401Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nome\": \"Lucas\",\n  \"email\": \"lucasdebatin7@univali.br\",\n  \"senha\": \"1234567\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "b2390d89-e8fc-47cb-8093-1ee6a3b98b45",
+            "colId": "b04c319b-99f5-4217-84d0-fce7fc742ded",
+            "containerId": "",
+            "name": "LoginPost ",
+            "url": "http://localhost:3333/api/login",
+            "method": "POST",
+            "sortNum": 7500,
+            "created": "2022-10-21T19:05:27.431Z",
+            "modified": "2022-11-04T00:02:35.508Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\": \"lucasdebatin@univali.br\",\n  \"senha\": \"1234567\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "4dddb7c4-3709-4479-a818-c5f9377c401d",
+            "colId": "b04c319b-99f5-4217-84d0-fce7fc742ded",
+            "containerId": "",
+            "name": "UsuariosPost",
+            "url": "http://localhost:3333/api/usuarios",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2022-10-14T14:17:13.660Z",
+            "modified": "2022-11-04T00:01:51.577Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nome\": \"Lucas\",\n  \"email\": \"lucasdebatin8@univali.br\",\n  \"senha\": \"123456\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{access_token}}"
+            },
+            "tests": []
+        },
+        {
+            "_id": "1453ce8c-9f38-4aea-8b20-4612048b8db0",
+            "colId": "b04c319b-99f5-4217-84d0-fce7fc742ded",
+            "containerId": "",
+            "name": "UsuariosPut",
+            "url": "http://localhost:3333/api/usuarios/1",
+            "method": "PUT",
+            "sortNum": 15000,
+            "created": "2022-10-14T14:21:33.826Z",
+            "modified": "2022-11-04T00:00:41.720Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nome\": \"Lucas Debatin\",\n  \"email\": \"lucasdebatin@univali.br\",\n  \"senha\": \"\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{access_token}}"
+            },
+            "tests": []
+        },
+        {
+            "_id": "99f15d5a-5a40-45ba-bf79-2cb52852d35a",
+            "colId": "b04c319b-99f5-4217-84d0-fce7fc742ded",
+            "containerId": "",
+            "name": "UsuariosDelete",
+            "url": "http://localhost:3333/api/usuarios/2",
+            "method": "DELETE",
+            "sortNum": 17500,
+            "created": "2022-10-14T15:32:58.355Z",
+            "modified": "2022-10-28T17:32:51.044Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{access_token}}"
+            },
+            "tests": []
+        },
+        {
+            "_id": "1e3ecf94-5988-4c26-bf11-02bc92f70cac",
+            "colId": "b04c319b-99f5-4217-84d0-fce7fc742ded",
+            "containerId": "",
+            "name": "UsuariosGetById",
+            "url": "http://localhost:3333/api/usuarios/1",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2022-10-14T14:21:03.623Z",
+            "modified": "2022-10-28T17:30:43.686Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{access_token}}"
+            },
+            "tests": []
+        },
+        {
+            "_id": "51d9c944-45e8-4427-8843-96d781c5a66c",
+            "colId": "b04c319b-99f5-4217-84d0-fce7fc742ded",
+            "containerId": "",
+            "name": "UsuariosGetAll",
+            "url": "http://localhost:3333/api/usuarios",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2022-10-14T14:21:18.132Z",
+            "modified": "2022-11-04T13:47:19.320Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{access_token}}"
+            },
+            "tests": []
+        },
+        {
+            "_id": "66b5e502-0519-4c00-ab18-4d60e3e94251",
+            "colId": "b04c319b-99f5-4217-84d0-fce7fc742ded",
+            "containerId": "",
+            "name": "ProdutosPost",
+            "url": "http://localhost:3333/api/livros",
+            "method": "POST",
+            "sortNum": 35000,
+            "created": "2022-10-14T19:30:45.976Z",
+            "modified": "2022-10-28T17:34:50.545Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"titulo\": \"Inteligência Artificial\",\n  \"resumo\": \"O livro cobre uma variedade de técnicas de Inteligência Artificial, algoritmos e metodologias, incluindo playing game, agentes inteligentes, aprendizado de máquinas, algoritmos genéticos e vida artificial.\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{access_token}}"
+            },
+            "tests": []
+        },
+        {
+            "_id": "94963e1d-3751-4f54-bd70-b1fb14548c81",
+            "colId": "b04c319b-99f5-4217-84d0-fce7fc742ded",
+            "containerId": "",
+            "name": "ProutosPut",
+            "url": "http://localhost:3333/api/livros/1",
+            "method": "PUT",
+            "sortNum": 37500,
+            "created": "2022-10-14T19:32:16.990Z",
+            "modified": "2022-10-28T17:33:08.822Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"titulo\": \"Teste\",\n  \"resumo\": \"Teste\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{access_token}}"
+            },
+            "tests": []
+        },
+        {
+            "_id": "e44dc910-e02f-47d7-a5f5-533a2161c8ab",
+            "colId": "b04c319b-99f5-4217-84d0-fce7fc742ded",
+            "containerId": "",
+            "name": "ProdutosDelete",
+            "url": "http://localhost:3333/api/livros/2",
+            "method": "DELETE",
+            "sortNum": 38750,
+            "created": "2022-10-14T19:33:05.190Z",
+            "modified": "2022-10-28T17:54:36.941Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{access_token}}"
+            },
+            "tests": []
+        },
+        {
+            "_id": "a27e994f-953d-4f21-af9e-1fa2d8b4ddbe",
+            "colId": "b04c319b-99f5-4217-84d0-fce7fc742ded",
+            "containerId": "",
+            "name": "ProdutosGetById",
+            "url": "http://localhost:3333/api/livros/1",
+            "method": "GET",
+            "sortNum": 39375,
+            "created": "2022-10-14T19:34:46.887Z",
+            "modified": "2022-10-28T17:35:00.683Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{access_token}}"
+            },
+            "tests": []
+        },
+        {
+            "_id": "28ea3ad7-e9b2-441e-9b8a-2115d1caee79",
+            "colId": "b04c319b-99f5-4217-84d0-fce7fc742ded",
+            "containerId": "",
+            "name": "ProdutosGetAll",
+            "url": "http://localhost:3333/api/livros?limit=1&offset=0",
+            "method": "GET",
+            "sortNum": 39687.5,
+            "created": "2022-10-14T19:34:53.013Z",
+            "modified": "2022-10-28T17:33:17.831Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "limit",
+                    "value": "1",
+                    "isPath": false
+                },
+                {
+                    "name": "offset",
+                    "value": "0",
+                    "isPath": false
+                }
+            ],
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{access_token}}"
+            },
+            "tests": []
+        },
+        {
+            "_id": "83fb041c-2ddf-41d7-8cd6-7e0dd47c9cf2",
+            "colId": "b04c319b-99f5-4217-84d0-fce7fc742ded",
+            "containerId": "",
+            "name": "CompraPost",
+            "url": "http://localhost:3333/api/emprestimos",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2022-10-14T17:17:05.945Z",
+            "modified": "2022-11-11T17:31:07.309Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"id_usuario\": 1,\n  \"data_retirada\": \"2022-10-10\",\n  \"status\": 1,\n  \"livro_ids\": [1, 2]\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{access_token}}"
+            },
+            "tests": []
+        },
+        {
+            "_id": "487803fc-a9a6-40b5-bb0f-16d25f963cd2",
+            "colId": "b04c319b-99f5-4217-84d0-fce7fc742ded",
+            "containerId": "",
+            "name": "CompraPut",
+            "url": "http://localhost:3333/api/emprestimos/2",
+            "method": "PUT",
+            "sortNum": 45000,
+            "created": "2022-10-14T18:25:46.749Z",
+            "modified": "2022-11-11T17:39:43.452Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"status\": 2\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{access_token}}"
+            },
+            "tests": []
+        },
+        {
+            "_id": "193fefa6-1a88-4ee3-85fb-ad73cbe84f4d",
+            "colId": "b04c319b-99f5-4217-84d0-fce7fc742ded",
+            "containerId": "",
+            "name": "CompraGetById",
+            "url": "http://localhost:3333/api/emprestimos/2",
+            "method": "GET",
+            "sortNum": 50000,
+            "created": "2022-10-14T18:19:45.407Z",
+            "modified": "2022-11-11T17:47:35.663Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{access_token}}"
+            },
+            "tests": []
+        },
+        {
+            "_id": "b91b6216-0df9-493d-9425-77440c783bd5",
+            "colId": "b04c319b-99f5-4217-84d0-fce7fc742ded",
+            "containerId": "",
+            "name": "CompraGetAll",
+            "url": "http://localhost:3333/api/emprestimos?limit=10&offset=0",
+            "method": "GET",
+            "sortNum": 60000,
+            "created": "2022-10-14T18:19:49.278Z",
+            "modified": "2022-11-11T16:47:03.141Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "limit",
+                    "value": "10",
+                    "isPath": false
+                },
+                {
+                    "name": "offset",
+                    "value": "0",
+                    "isPath": false
+                }
+            ],
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{access_token}}"
+            },
+            "tests": []
+        }
+    ]
+}
